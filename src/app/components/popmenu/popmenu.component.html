@@ -1,0 +1,42 @@
+<ion-fab>
+  <ion-fab-button (click)="togglePopupMenu()">
+    <ion-ripple-effect></ion-ripple-effect>
+    <ion-icon color='light' name="close-circle-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<div class="popup-menu">
+  <div class="popup-menu-overlay" [ngClass]="{'in': openMenu}"></div>
+  <div class="popup-menu-panel" [ngClass]="{'in': openMenu}">
+    <!-- <div class='item-circle'> -->
+      
+    <div class="popup-menu-item">
+      <div class='our-brand'>
+        <ion-icon name="cog"></ion-icon>
+        <span>Our Brand</span>
+      </div>
+    </div>
+    <div class="popup-menu-item">
+      <div class="our-products">
+        <ion-icon name="beer"></ion-icon>
+        <span>Our Products</span>
+      </div>
+    </div>
+
+    <div class="popup-menu-item">
+      <div class="game">
+        <ion-icon name="person"></ion-icon>
+        <span>Game</span>
+      </div>
+    </div>
+
+    <div class="popup-menu-item">
+      <div class="news-feeds">
+        <ion-icon name="compass"></ion-icon>
+        <span>News Feeds</span>
+      </div>
+    </div>
+   
+    <!-- </div> -->
+  </div>
+</div>

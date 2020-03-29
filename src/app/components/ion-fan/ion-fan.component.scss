@@ -1,0 +1,123 @@
+ion-footer {
+  position: absolute;
+  bottom: 0;
+  .container {
+    position: relative;
+    top: 5vh;
+  }
+  .container.active .menu {
+    pointer-events: auto;
+    -webkit-transform: scale(0.7) rotate(0deg);
+    -moz-transform: scale(0.7) rotate(0deg);
+    -ms-transform: scale(0.7) rotate(0deg);
+    transform: scale(0.7) rotate(0deg);
+  }
+  .menu {
+    position: relative;
+    top: -5vh;
+    z-index: 0;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  .menu > li:nth-of-type(1) {
+    -moz-transform: rotate(0deg) skew(50deg);
+    -ms-transform: rotate(0deg) skew(50deg);
+    -webkit-transform: rotate(0deg) skew(50deg);
+    transform: rotate(0deg) skew(50deg);
+  }
+  .menu > li:nth-of-type(2) {
+    -moz-transform: rotate(35deg) skew(50deg);
+    -ms-transform: rotate(35deg) skew(50deg);
+    -webkit-transform: rotate(35deg) skew(50deg);
+    transform: rotate(35deg) skew(50deg);
+  }
+  .menu > li:nth-of-type(2) > a {
+    background-color: var(--ion-color-dark);
+  }
+  .menu > li:nth-of-type(3) {
+    -moz-transform: rotate(70deg) skew(50deg);
+    -ms-transform: rotate(70deg) skew(50deg);
+    -webkit-transform: rotate(70deg) skew(50deg);
+    transform: rotate(70deg) skew(50deg);
+  }
+  .menu > li:nth-of-type(4) {
+    -moz-transform: rotate(105deg) skew(50deg);
+    -ms-transform: rotate(105deg) skew(50deg);
+    -webkit-transform: rotate(105deg) skew(50deg);
+    transform: rotate(105deg) skew(50deg);
+  }
+  .menu > li:nth-of-type(4) > a {
+    background-color: var(--ion-color-dark);
+  }
+  .menu > li:nth-of-type(5) {
+    -moz-transform: rotate(140deg) skew(50deg);
+    -ms-transform: rotate(140deg) skew(50deg);
+    -webkit-transform: rotate(140deg) skew(50deg);
+    transform: rotate(140deg) skew(50deg);
+  }
+  .menu > li {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 1.5em;
+    width: 10em;
+    height: 10em;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .menu > li a {
+    position: absolute;
+    bottom: -7.25em;
+    right: -7.25em;
+    display: block;
+    height: 14.5em;
+    width: 14.5em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--ion-color-light);
+    padding-top: 0em;
+    text-align: center;
+    font-size: 1.18em;
+    -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+    transform: skew(-50deg) rotate(-70deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s, color 0.3s;
+    -moz-transition: opacity 0.3s, color 0.3s;
+    transition: opacity 0.3s, color 0.3s;
+    background-color: var(--ion-color-dark);
+  }
+  .menu > li a ion-icon {
+    padding: 20px 15px 0 0;
+    font-size: 45px;
+  }
+  .menu > li a:active {
+  background-color: var(--ion-color-primary-tint);
+}
+  .fab-button ion-fab {
+    ion-fab-button {
+      ion-icon {
+        position: relative;
+        top: -15px;
+      }
+    }
+  }
+}
