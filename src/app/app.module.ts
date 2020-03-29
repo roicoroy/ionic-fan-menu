@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 7b446d7... updates for ionic components
 import { IonBottomDrawerModule } from 'ion-bottom-drawer';
 import { MatButtonModule } from '@angular/material/button';
 @NgModule({
@@ -24,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     IonBottomDrawerModule,
     MatButtonModule
   ],
+<<<<<<< HEAD
 =======
 
 @NgModule({
@@ -38,6 +42,8 @@ import { MatButtonModule } from '@angular/material/button';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
 >>>>>>> parent of 3bc3d4f... components revised
+=======
+>>>>>>> parent of 7b446d7... updates for ionic components
   providers: [
     StatusBar,
     SplashScreen,
@@ -45,4 +51,4 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
