@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ion-fan',
@@ -7,18 +8,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IonFanComponent implements OnInit {
   // openMenu: Boolean = false;
-  classToggled
-  constructor() { }
+  classToggled;
+  classActive;
+  active;
+  fabActive;
+  constructor(
+    private router: Router
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   // togglePopupMenu() {
   //   return this.openMenu = !this.openMenu;
   // }
-  IonViewWillEnter(){
+  IonViewWillEnter() {
     return this.classToggled = false;
   }
   open() {
-    console.log('ipoen');
-    return this.classToggled = !this.classToggled;
+    this.fabActive = !this.fabActive;
+    this.classToggled = !this.classToggled;
+    console.log(this.fabActive, this.classToggled);
+    return;
   }
+  activateButton() {
+    return;
+  }
+  // updateActive(friend){
+  //   this.active = friend;
+  //   }
+
+  navigate(route) {
+    this.router.navigateByUrl(route);
+  }
+
+  
 }

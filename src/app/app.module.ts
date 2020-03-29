@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IonBottomDrawerModule } from 'ion-bottom-drawer';
-
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -19,7 +19,8 @@ import { IonBottomDrawerModule } from 'ion-bottom-drawer';
     IonicModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
-    IonBottomDrawerModule
+    IonBottomDrawerModule,
+    MatButtonModule
   ],
   providers: [
     StatusBar,

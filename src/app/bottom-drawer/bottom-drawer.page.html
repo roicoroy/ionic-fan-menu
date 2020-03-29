@@ -5,11 +5,7 @@
 </ion-header>
 
 <ion-content no-bounce>
-
+  <ion-button (click)="back()" expand="block" fill="clear" shape="round">
+    back
+  </ion-button>
 </ion-content>
-<ion-bottom-drawer [(state)]="drawerState" [minimumHeight]="minimumHeight" [dockedHeight]="dockedHeight"
-  [shouldBounce]="shouldBounce" [distanceTop]="distanceTop">
-  <div class="drawer-content">
-    Bottom Drawer Content
-  </div>
-</ion-bottom-drawer>

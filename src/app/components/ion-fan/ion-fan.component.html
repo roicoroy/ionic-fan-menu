@@ -1,37 +1,37 @@
 <div class='container' [class.active]="classToggled">
-  <div class='fan-menu-overlay' [class.overlay]="classToggled"></div>
+  <!-- <div class='fan-menu-overlay' [class.overlay]="classToggled"></div> -->
   <div class="menu">
-    <li>
-      <a>
+    <div>
+      <a (click)='navigate("bottom-drawer")'>
         <ion-icon class='button-icon' src='assets/custom-icons/ios-custom-glass.svg'></ion-icon>
       </a>
-    </li>
-    <li>
+    </div>
+    <div>
       <a>
         <ion-icon class='button-icon' src='assets/custom-icons/ios-custom-paper.svg'></ion-icon>
       </a>
-    </li>
-    <li>
+    </div>
+    <div>
       <a>
         <ion-icon class='button-icon' src='assets/custom-icons/ios-custom-horn.svg'></ion-icon>
       </a>
-    </li>
-    <li>
+    </div>
+    <div>
       <a>
         <ion-icon class='button-icon' src='assets/custom-icons/ios-custom-crown.svg'></ion-icon>
       </a>
-    </li>
-    <li>
+    </div>
+    <div>
       <a>
         <ion-icon class='button-icon' src='assets/custom-icons/md-icon-logout.svg'></ion-icon>
       </a>
-    </li>
+    </div>
   </div>
-  <ion-fab vertical="bottom" horizontal="center">
-    <ion-fab-button (click)="open()">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+</div>
+<div class="fab-container ion-text-center">
+  <button mat-icon-button class='fan-fab' (click)="open()" [ngClass]="{'fab-active' : fabActive }">
+    <ion-icon class='menu-icon' name="add"></ion-icon>
+  </button>
 </div>
 
 
