@@ -15,11 +15,7 @@ export class IonFanComponent implements OnInit {
   constructor(
     private router: Router
   ) { }
-
   ngOnInit() { }
-  // togglePopupMenu() {
-  //   return this.openMenu = !this.openMenu;
-  // }
   IonViewWillEnter() {
     return this.classToggled = false;
   }
@@ -35,10 +31,7 @@ export class IonFanComponent implements OnInit {
   // updateActive(friend){
   //   this.active = friend;
   //   }
-
   navigate(route) {
     this.router.navigateByUrl(route);
   }
-
-  
 }

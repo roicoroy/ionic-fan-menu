@@ -18,3 +18,4 @@ export class BottomDrawerPage implements OnInit {
     this.nacCtrl.navigateBack('home');
   }
 }
+
