@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+<<<<<<< HEAD
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IonBottomDrawerModule } from 'ion-bottom-drawer';
 import { MatButtonModule } from '@angular/material/button';
@@ -31,6 +32,13 @@ export class CustomHammerConfig extends HammerGestureConfig {
     IonBottomDrawerModule,
     MatButtonModule
   ],
+=======
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+>>>>>>> parent of b1e3732... setup
   providers: [
     StatusBar,
     SplashScreen,
