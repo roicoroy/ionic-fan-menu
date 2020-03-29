@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
 import { IonBottomDrawerModule } from 'ion-bottom-drawer';
 import { MatButtonModule } from '@angular/material/button';
 @NgModule({
@@ -22,6 +23,13 @@ import { MatButtonModule } from '@angular/material/button';
     IonBottomDrawerModule,
     MatButtonModule
   ],
+=======
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
+>>>>>>> parent of 3bc3d4f... components revised
   providers: [
     StatusBar,
     SplashScreen,
@@ -29,4 +37,4 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
