@@ -1,12 +1,16 @@
-// ion-footer {
-//   position: absolute;
-//   bottom: 0;
-
-// }
-
-.container {
-  // position: relative;
-  // top: 5vh;
+:host{
+  ion-fab {
+    background-color: red;
+    ion-fab-button {
+      height: 15vh;
+      width: 15vh;
+      background-color: green;
+      ion-icon {
+        position: relative;
+        top: -15px;
+      }
+    }
+  } 
 }
 .container.active .menu {
   pointer-events: auto;
@@ -140,11 +144,4 @@
 .menu > li a:active {
   background-color: var(--ion-color-primary-tint);
 }
-.fab-button ion-fab {
-  ion-fab-button {
-    ion-icon {
-      position: relative;
-      top: -15px;
-    }
-  }
-}
+
