@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>bottom-drawer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-bounce>
+
+</ion-content>
+<ion-bottom-drawer [(state)]="drawerState" [minimumHeight]="minimumHeight" [dockedHeight]="dockedHeight"
+  [shouldBounce]="shouldBounce" [distanceTop]="distanceTop">
+  <div class="drawer-content">
+    Bottom Drawer Content
+  </div>
+</ion-bottom-drawer>
